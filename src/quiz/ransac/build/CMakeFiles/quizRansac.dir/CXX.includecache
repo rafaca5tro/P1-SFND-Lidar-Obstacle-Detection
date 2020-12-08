@@ -6,16 +6,6 @@
 
 #IncludeRegexTransform: 
 
-/home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/environment.cpp
-sensors/lidar.h
-/home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/sensors/lidar.h
-render/render.h
-/home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/render/render.h
-processPointClouds.h
-/home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/processPointClouds.h
-processPointClouds.cpp
-/home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/processPointClouds.cpp
-
 /home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/processPointClouds.cpp
 processPointClouds.h
 /home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/processPointClouds.h
@@ -52,6 +42,16 @@ chrono
 render/box.h
 /home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/render/box.h
 
+/home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/quiz/ransac/ransac2d.cpp
+../../render/render.h
+/home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/render/render.h
+unordered_set
+-
+../../processPointClouds.h
+/home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/processPointClouds.h
+../../processPointClouds.cpp
+/home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/processPointClouds.cpp
+
 /home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/render/box.h
 Eigen/Geometry
 -
@@ -66,14 +66,6 @@ iostream
 vector
 -
 string
--
-
-/home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/sensors/lidar.h
-../render/render.h
-/home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/render/render.h
-ctime
--
-chrono
 -
 
 /usr/include/eigen3/Eigen/Cholesky

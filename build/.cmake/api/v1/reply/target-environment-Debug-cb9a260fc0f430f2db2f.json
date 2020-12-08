@@ -130,7 +130,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "    -std=c++14"
+					"fragment" : "  -g   -std=c++14"
 				}
 			],
 			"defines" : 
@@ -205,6 +205,10 @@
 	{
 		"commandFragments" : 
 		[
+			{
+				"fragment" : "-g",
+				"role" : "flags"
+			},
 			{
 				"fragment" : "-rdynamic",
 				"role" : "flags"

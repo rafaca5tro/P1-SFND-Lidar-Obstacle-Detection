@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc
+CMAKE_SOURCE_DIR = /home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/quiz/ransac
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/build
+CMAKE_BINARY_DIR = /home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/quiz/ransac/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -80,9 +80,9 @@ edit_cache/fast: edit_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/build/CMakeFiles /home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/build/CMakeFiles/progress.marks
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/quiz/ransac/build/CMakeFiles /home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/quiz/ransac/build/CMakeFiles/progress.marks
 	$(MAKE) -f CMakeFiles/Makefile2 all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/build/CMakeFiles 0
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/quiz/ransac/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
@@ -111,98 +111,71 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named environment
+# Target rules for targets named quizRansac
 
 # Build rule for target.
-environment: cmake_check_build_system
-	$(MAKE) -f CMakeFiles/Makefile2 environment
-.PHONY : environment
+quizRansac: cmake_check_build_system
+	$(MAKE) -f CMakeFiles/Makefile2 quizRansac
+.PHONY : quizRansac
 
 # fast build rule for target.
-environment/fast:
-	$(MAKE) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/build
-.PHONY : environment/fast
+quizRansac/fast:
+	$(MAKE) -f CMakeFiles/quizRansac.dir/build.make CMakeFiles/quizRansac.dir/build
+.PHONY : quizRansac/fast
 
-src/environment.o: src/environment.cpp.o
+home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/render/render.o: home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/render/render.cpp.o
 
-.PHONY : src/environment.o
-
-# target to build an object file
-src/environment.cpp.o:
-	$(MAKE) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/environment.cpp.o
-.PHONY : src/environment.cpp.o
-
-src/environment.i: src/environment.cpp.i
-
-.PHONY : src/environment.i
-
-# target to preprocess a source file
-src/environment.cpp.i:
-	$(MAKE) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/environment.cpp.i
-.PHONY : src/environment.cpp.i
-
-src/environment.s: src/environment.cpp.s
-
-.PHONY : src/environment.s
-
-# target to generate assembly for a file
-src/environment.cpp.s:
-	$(MAKE) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/environment.cpp.s
-.PHONY : src/environment.cpp.s
-
-src/processPointClouds.o: src/processPointClouds.cpp.o
-
-.PHONY : src/processPointClouds.o
+.PHONY : home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/render/render.o
 
 # target to build an object file
-src/processPointClouds.cpp.o:
-	$(MAKE) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/processPointClouds.cpp.o
-.PHONY : src/processPointClouds.cpp.o
+home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/render/render.cpp.o:
+	$(MAKE) -f CMakeFiles/quizRansac.dir/build.make CMakeFiles/quizRansac.dir/home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/render/render.cpp.o
+.PHONY : home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/render/render.cpp.o
 
-src/processPointClouds.i: src/processPointClouds.cpp.i
+home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/render/render.i: home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/render/render.cpp.i
 
-.PHONY : src/processPointClouds.i
+.PHONY : home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/render/render.i
 
 # target to preprocess a source file
-src/processPointClouds.cpp.i:
-	$(MAKE) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/processPointClouds.cpp.i
-.PHONY : src/processPointClouds.cpp.i
+home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/render/render.cpp.i:
+	$(MAKE) -f CMakeFiles/quizRansac.dir/build.make CMakeFiles/quizRansac.dir/home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/render/render.cpp.i
+.PHONY : home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/render/render.cpp.i
 
-src/processPointClouds.s: src/processPointClouds.cpp.s
+home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/render/render.s: home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/render/render.cpp.s
 
-.PHONY : src/processPointClouds.s
+.PHONY : home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/render/render.s
 
 # target to generate assembly for a file
-src/processPointClouds.cpp.s:
-	$(MAKE) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/processPointClouds.cpp.s
-.PHONY : src/processPointClouds.cpp.s
+home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/render/render.cpp.s:
+	$(MAKE) -f CMakeFiles/quizRansac.dir/build.make CMakeFiles/quizRansac.dir/home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/render/render.cpp.s
+.PHONY : home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/render/render.cpp.s
 
-src/render/render.o: src/render/render.cpp.o
+ransac2d.o: ransac2d.cpp.o
 
-.PHONY : src/render/render.o
+.PHONY : ransac2d.o
 
 # target to build an object file
-src/render/render.cpp.o:
-	$(MAKE) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/render/render.cpp.o
-.PHONY : src/render/render.cpp.o
+ransac2d.cpp.o:
+	$(MAKE) -f CMakeFiles/quizRansac.dir/build.make CMakeFiles/quizRansac.dir/ransac2d.cpp.o
+.PHONY : ransac2d.cpp.o
 
-src/render/render.i: src/render/render.cpp.i
+ransac2d.i: ransac2d.cpp.i
 
-.PHONY : src/render/render.i
+.PHONY : ransac2d.i
 
 # target to preprocess a source file
-src/render/render.cpp.i:
-	$(MAKE) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/render/render.cpp.i
-.PHONY : src/render/render.cpp.i
+ransac2d.cpp.i:
+	$(MAKE) -f CMakeFiles/quizRansac.dir/build.make CMakeFiles/quizRansac.dir/ransac2d.cpp.i
+.PHONY : ransac2d.cpp.i
 
-src/render/render.s: src/render/render.cpp.s
+ransac2d.s: ransac2d.cpp.s
 
-.PHONY : src/render/render.s
+.PHONY : ransac2d.s
 
 # target to generate assembly for a file
-src/render/render.cpp.s:
-	$(MAKE) -f CMakeFiles/environment.dir/build.make CMakeFiles/environment.dir/src/render/render.cpp.s
-.PHONY : src/render/render.cpp.s
+ransac2d.cpp.s:
+	$(MAKE) -f CMakeFiles/quizRansac.dir/build.make CMakeFiles/quizRansac.dir/ransac2d.cpp.s
+.PHONY : ransac2d.cpp.s
 
 # Help Target
 help:
@@ -212,16 +185,13 @@ help:
 	@echo "... depend"
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
-	@echo "... environment"
-	@echo "... src/environment.o"
-	@echo "... src/environment.i"
-	@echo "... src/environment.s"
-	@echo "... src/processPointClouds.o"
-	@echo "... src/processPointClouds.i"
-	@echo "... src/processPointClouds.s"
-	@echo "... src/render/render.o"
-	@echo "... src/render/render.i"
-	@echo "... src/render/render.s"
+	@echo "... quizRansac"
+	@echo "... home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/render/render.o"
+	@echo "... home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/render/render.i"
+	@echo "... home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/src/render/render.s"
+	@echo "... ransac2d.o"
+	@echo "... ransac2d.i"
+	@echo "... ransac2d.s"
 .PHONY : help
 
 
