@@ -1,3 +1,0 @@
-/home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/build/CMakeFiles/rebuild_cache.dir
-/home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/build/CMakeFiles/edit_cache.dir
-/home/rcastro/Documents/SFND_Lidar_Obstacle_Detection-rc/build/CMakeFiles/environment.dir
