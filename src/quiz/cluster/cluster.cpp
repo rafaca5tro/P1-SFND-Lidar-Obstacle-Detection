@@ -1,6 +1,7 @@
 /* \author Aaron Brown */
 // Quiz on implementing simple RANSAC line fitting
 
+#pragma once
 #include "../../render/render.h"
 #include "../../render/box.h"
 #include <chrono>
@@ -75,12 +76,40 @@ void render2DTree(Node* node, pcl::visualization::PCLVisualizer::Ptr& viewer, Bo
 
 }
 
+void clusterH(int index, const std::vector<std::vector<float>>& points, std::vector<bool>& processed, std::vector<int>& cluster, KdTree* tree, float distanceTol)
+{
+ 	processed[index] = true;
+  	cluster.push_back(index);
+  
+  	std::vector<int> neighbors = tree->search(points[index], distanceTol);
+  
+  	for(int ptIndex : neighbors)
+    {
+     	if(!processed[ptIndex])
+        {
+         	clusterH(ptIndex, points, processed, cluster, tree, distanceTol); 
+        }
+    }
+}
+
 std::vector<std::vector<int>> euclideanCluster(const std::vector<std::vector<float>>& points, KdTree* tree, float distanceTol)
 {
 
 	// TODO: Fill out this function to return list of indices for each cluster
 
 	std::vector<std::vector<int>> clusters;
+  	std::vector<bool> processed(points.size(), false);
+  
+  	for(int i = 0; i < points.size(); i++)
+
+    {
+     	if(!processed[i])
+        {
+         	std::vector<int> cluster;
+			clusterH(i, points, processed, cluster, tree, distanceTol);
+          	clusters.push_back(cluster);
+        }
+    }
  
 	return clusters;
 
