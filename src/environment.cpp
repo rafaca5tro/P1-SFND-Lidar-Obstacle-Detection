@@ -54,7 +54,7 @@ void cityBlockStream(pcl::visualization::PCLVisualizer::Ptr& viewer, ProcessPoin
 void cityBlock(pcl::visualization::PCLVisualizer::Ptr& viewer)
 {
   // ----------------------------------------------------
-  // -----Open 3D viewer and display City Block     -----
+  // -----Open 3D viewer and display City Block ---------
   // ----------------------------------------------------
 
   ProcessPointClouds<pcl::PointXYZI>* pointProcessor = new ProcessPointClouds<pcl::PointXYZI>();
@@ -155,14 +155,7 @@ int main (int argc, char** argv)
     pcl::visualization::PCLVisualizer::Ptr viewer (new pcl::visualization::PCLVisualizer ("3D Viewer"));
     CameraAngle setAngle = FPS;
     initCamera(setAngle, viewer);
-    //simpleHighway(viewer);
-    /********************* For one PCD file ********************
-    cityBlock(viewer);
-    while (!viewer->wasStopped ())
-    {
-        viewer->spinOnce ();
-    } 
-    ***//////////////////////////////////
+
     ProcessPointClouds<pcl::PointXYZI>* pointProcessorI = new ProcessPointClouds<pcl::PointXYZI>();
     std::vector<boost::filesystem::path> stream = pointProcessorI->streamPcd("../src/sensors/data/pcd/data_1");
     auto streamIterator = stream.begin();
